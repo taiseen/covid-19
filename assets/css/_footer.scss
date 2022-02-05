@@ -1,0 +1,51 @@
+.footer {
+
+    .box {
+        flex: 1 1 15rem;
+
+        h3 {
+            font-weight: bolder;
+            @include fontStyle(2rem, #777);
+        }
+
+        a {
+            display: block;
+            padding: 0.5rem 0;
+            @include fontStyle(1.5rem, #777);
+
+            &:hover {
+                color: var(--mainColor);
+            }
+
+            &:hover i {
+                margin-right: .6rem;
+            }
+
+            i {
+                color: var(--mainColor);
+            }
+
+            .fab {
+                margin-right: .4rem;
+            }
+        }
+
+        .email {
+            text-transform: lowercase;
+        }
+
+    }
+
+    .credit {
+        @include fontStyle(2rem, var(--black));
+
+        text-align : center;
+        border-top : .1rem solid rgba(0, 0, 0, .1);
+        margin-top : 1rem;
+        padding-top: 2rem;
+
+        span {
+            color: var(--mainColor);
+        }
+    }
+}

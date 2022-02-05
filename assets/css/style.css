@@ -182,7 +182,7 @@ header {
 }
 
 header .logo {
-  font-size: 3rem;
+  font-size: 2.8rem;
   color: var(--black);
 }
 
@@ -210,7 +210,7 @@ header .menuBar {
   cursor: pointer;
   -webkit-transition: .2s linear;
   transition: .2s linear;
-  font-size: 3rem;
+  font-size: 2.8rem;
   color: var(--mainColor);
 }
 
@@ -414,6 +414,58 @@ header .menuBar {
   color: var(--mainColor);
 }
 
+.footer .box {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 15rem;
+          flex: 1 1 15rem;
+}
+
+.footer .box h3 {
+  font-weight: bolder;
+  font-size: 2rem;
+  color: #777;
+}
+
+.footer .box a {
+  display: block;
+  padding: 0.5rem 0;
+  font-size: 1.5rem;
+  color: #777;
+}
+
+.footer .box a:hover {
+  color: var(--mainColor);
+}
+
+.footer .box a:hover i {
+  margin-right: .6rem;
+}
+
+.footer .box a i {
+  color: var(--mainColor);
+}
+
+.footer .box a .fab {
+  margin-right: .4rem;
+}
+
+.footer .box .email {
+  text-transform: lowercase;
+}
+
+.footer .credit {
+  font-size: 2rem;
+  color: var(--black);
+  text-align: center;
+  border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+  margin-top: 1rem;
+  padding-top: 2rem;
+}
+
+.footer .credit span {
+  color: var(--mainColor);
+}
+
 @media (max-width: 991px) {
   html {
     font-size: 55%;
@@ -458,7 +510,7 @@ header .menuBar {
 
 @media (max-width: 450px) {
   .colorSwitcher {
-    top: 7rem;
+    top: 8rem;
   }
   .home .content h3 {
     font-size: 2.5rem;

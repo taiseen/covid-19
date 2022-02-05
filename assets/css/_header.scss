@@ -3,7 +3,7 @@ header {
     box-shadow: var(--boxShadow);
 
     .logo {
-        @include fontStyle(3rem, var(--black));
+        @include fontStyle(2.8rem, var(--black));
 
         span {
             color: var(--mainColor);
@@ -30,7 +30,7 @@ header {
     .menuBar {
         cursor    : pointer;
         transition: .2s linear;
-        @include fontStyle(3rem, var(--mainColor));
+        @include fontStyle(2.8rem, var(--mainColor));
     }
 
 }
