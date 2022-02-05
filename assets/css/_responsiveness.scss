@@ -54,17 +54,25 @@
             transform: rotate(180deg);
         }
     }
-
-
 }
 
 @media (max-width: 450px) {
+
+    header {
+
+        .logo,
+        .menuBar {
+            padding: 0 .5rem;
+        }
+    }
 
     .colorSwitcher {
         top: 8rem;
     }
 
     .home .content {
+
+        margin-top: -2rem;
 
         h3 {
             font-size: 2.5rem;

@@ -1,7 +1,7 @@
 .footer {
 
     .box {
-        flex: 1 1 15rem;
+        flex: 1 1 14rem;
 
         h3 {
             font-weight: bolder;
@@ -11,7 +11,7 @@
         a {
             display: block;
             padding: 0.5rem 0;
-            @include fontStyle(1.5rem, #777);
+            @include fontStyle(1.4rem, #777);
 
             &:hover {
                 color: var(--mainColor);

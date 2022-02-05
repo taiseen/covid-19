@@ -416,8 +416,8 @@ header .menuBar {
 
 .footer .box {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 15rem;
-          flex: 1 1 15rem;
+      -ms-flex: 1 1 14rem;
+          flex: 1 1 14rem;
 }
 
 .footer .box h3 {
@@ -429,7 +429,7 @@ header .menuBar {
 .footer .box a {
   display: block;
   padding: 0.5rem 0;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   color: #777;
 }
 
@@ -509,8 +509,15 @@ header .menuBar {
 }
 
 @media (max-width: 450px) {
+  header .logo,
+  header .menuBar {
+    padding: 0 .5rem;
+  }
   .colorSwitcher {
     top: 8rem;
+  }
+  .home .content {
+    margin-top: -2rem;
   }
   .home .content h3 {
     font-size: 2.5rem;

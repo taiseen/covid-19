@@ -22,30 +22,6 @@ menuBar.addEventListener('click', () => {
 });
 
 
-window.addEventListener('scroll', () => {
-    menuBar.classList.remove('fa-times');
-    navbar.classList.remove('userClick');
-
-
-    // auto select menu according to screen scrolling
-    sections.forEach(section => {
-
-        let top = window.scrollY;
-        let height = section.offsetHeight;
-        let offset = section.offsetTop - 150;
-        let id = section.getAttribute('id');
-
-        if (top >= offset && top < offset + height) {
-
-            navLinks.forEach(link => {
-                link.classList.remove('active');
-                document.querySelector('header .navbar a[href*=' + id + ']').classList.add('active');
-            });
-        };
-    });
-});
-
-
 
 /*****************************************************************
 ******************************************************************
@@ -77,4 +53,34 @@ switchBtn.addEventListener('click', () => {
 /*****************************************************************
 ******************************************************************
 ******************************************************************/
+
+
+
+window.addEventListener('scroll', () => {
+    menuBar.classList.remove('fa-times');
+    navbar.classList.remove('userClick');
+    colorSwitcher.classList.remove('userClick');
+
+
+
+    // auto select menu according to screen scrolling
+    sections.forEach(section => {
+
+        let top = window.scrollY;
+        let height = section.offsetHeight;
+        let offset = section.offsetTop - 150;
+        let id = section.getAttribute('id');
+
+        if (top >= offset && top < offset + height) {
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                document.querySelector('header .navbar a[href*=' + id + ']').classList.add('active');
+            });
+        };
+    });
+});
+
+
+
 
