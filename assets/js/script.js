@@ -84,3 +84,16 @@ window.addEventListener('scroll', () => {
 
 
 
+// DISABLE the RIGHT CLICK for viewing the ==> View Page Source Code
+document.addEventListener('contextmenu', (e) => {
+    e.preventDefault();
+}, false);
+
+
+// DISABLE SHORTCUT KEY
+document.addEventListener('keydown', (e) => {
+    if (e.ctrlKey || e.keyCode==123) {
+        e.stopPropagation();
+        e.preventDefault();
+    }
+}, false);

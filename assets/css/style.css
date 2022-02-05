@@ -451,6 +451,7 @@ header .menuBar {
 
 .footer .box .email {
   text-transform: lowercase;
+  font-size: 1.2rem;
 }
 
 .footer .credit {
@@ -517,7 +518,7 @@ header .menuBar {
     top: 8rem;
   }
   .home .content {
-    margin-top: -5rem;
+    margin-top: -10rem;
   }
   .home .content h3 {
     font-size: 2.5rem;
