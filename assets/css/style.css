@@ -182,7 +182,7 @@ header {
 }
 
 header .logo {
-  font-size: 2rem;
+  font-size: 3rem;
   color: var(--black);
 }
 
@@ -210,7 +210,7 @@ header .menuBar {
   cursor: pointer;
   -webkit-transition: .2s linear;
   transition: .2s linear;
-  font-size: 2.2rem;
+  font-size: 3rem;
   color: var(--mainColor);
 }
 
@@ -357,6 +357,63 @@ header .menuBar {
   height: 100%;
 }
 
+.blogs .box {
+  width: 38rem;
+  border-radius: .5rem;
+  -webkit-box-shadow: var(--boxShadow);
+          box-shadow: var(--boxShadow);
+  background-color: var(--white);
+  cursor: pointer;
+}
+
+.blogs .box .image {
+  height: 20rem;
+  width: 100%;
+  border-radius: .5rem;
+  overflow: hidden;
+  background-color: var(--dimLight);
+}
+
+.blogs .box .image img {
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
+}
+
+.blogs .box:hover .image img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.blogs .box .content h3 {
+  font-size: 2rem;
+  color: var(--black);
+}
+
+.blogs .box .content .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 0.2rem solid rgba(0, 0, 0, 0.1);
+}
+
+.blogs .box .content .icons a {
+  font-size: 1.4rem;
+  color: #777;
+}
+
+.blogs .box .content .icons a i {
+  padding-right: 0.7rem;
+}
+
+.blogs .box .content .icons a:hover {
+  color: var(--mainColor);
+}
+
 @media (max-width: 991px) {
   html {
     font-size: 55%;
@@ -402,9 +459,6 @@ header .menuBar {
 @media (max-width: 450px) {
   .colorSwitcher {
     top: 7rem;
-  }
-  .home .content {
-    margin-top: -5rem;
   }
   .home .content h3 {
     font-size: 2.5rem;

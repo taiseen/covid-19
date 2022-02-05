@@ -1,6 +1,6 @@
 5 - Feb - 2022 
 
-# Covid-19 | [Live-Link](https://taiseen.github.io/repo-name)
+# Covid-19 | [Live-Link](https://taiseen.github.io/covid-19)
 
 Inspire & Learning From ==> [this link](https://youtu.be/hicAaaDyVzU)
 

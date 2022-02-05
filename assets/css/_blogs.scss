@@ -1,0 +1,56 @@
+.blogs {
+
+    .box {
+
+        width           : 38rem;
+        border-radius   : .5rem;
+        box-shadow      : var(--boxShadow);
+        background-color: var(--white);
+        cursor          : pointer;
+
+        .image {
+            height          : 20rem;
+            width           : 100%;
+            border-radius   : .5rem;
+            overflow        : hidden;
+            background-color: var(--dimLight);
+
+            img {
+                transition: .2s linear;
+            }
+        }
+
+        &:hover .image img {
+            transform: scale(1.1);
+        }
+
+        .content {
+
+            h3 {
+                @include fontStyle(2rem, var(--black));
+
+            }
+
+            .icons {
+                display        : flex;
+                justify-content: space-between;
+                margin-top     : 2rem;
+                padding-top    : 2rem;
+                border-top     : .2rem solid rgba(0, 0, 0, .1);
+
+                a {
+                    @include fontStyle(1.4rem, #777);
+
+                    i {
+                        padding-right: 0.7rem;
+                    }
+
+                    &:hover {
+                        color: var(--mainColor);
+                    }
+                }
+            }
+        }
+    }
+
+}
