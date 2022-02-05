@@ -1,0 +1,59 @@
+.experts {
+
+    .box {
+
+        width           : 26rem;
+        margin          : 0.5rem;
+        padding         : 1.5rem;
+        text-align      : center;
+        border-radius   : .5rem;
+        background-color: var(--white);
+        box-shadow      : var(--boxShadow);
+        overflow        : hidden;
+        position        : relative;
+
+        img {
+            width           : 100%;
+            margin-bottom   : 0.8em;
+            border-radius   : .5rem;
+            background-color: var(--dimLight);
+        }
+
+        h3 {
+            margin-top: 0.2rem 0;
+            @include fontStyle(2.2rem, var(--black));
+        }
+
+        span {
+            @include fontStyle(1.6rem, var(--mainColor));
+        }
+
+        &:hover .share{
+            right     : 1.5rem;
+        }
+
+        .share {
+            position  : absolute;
+            top       : .5rem;
+            right     : -5rem;
+            transition: .2s;
+
+            a {
+                display         : block;
+                height          : 3rem;
+                width           : 3rem;
+                line-height     : 3rem;
+                margin-top      : 0.5rem;
+                text-align      : center;
+                border-radius   : .3rem;
+                cursor          : pointer;
+                background-color: var(--mainColor);
+                @include fontStyle(1.6rem, var(--white));
+
+                &:hover {
+                    background-color: var(--black);
+                }
+            }
+        }
+    }
+}

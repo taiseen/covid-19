@@ -1,0 +1,11 @@
+.about {
+    .content {
+        h3 {
+            @include fontStyle(3.3rem, var(--black));
+        }
+
+        p {
+            @include fontStyle(1.8rem, #777);
+        }
+    }
+}

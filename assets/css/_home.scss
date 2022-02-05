@@ -1,0 +1,18 @@
+.home {
+
+    min-height         : 100vh;
+    background         : url(../img/home-bg.png) no-repeat;
+    background-position: center;
+    background-size    : cover;
+
+    .content {
+        h3 {
+            font-weight: bolder;
+            @include fontStyle(5rem, var(--mainColor));
+        }
+
+        span {
+            @include fontStyle(2rem, var(--mainColor));
+        }
+    }
+}

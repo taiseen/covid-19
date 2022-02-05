@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap');
+
+/* 5 - Feb - 2022  */
+
+:root {
+    --svgColor : #fbad37;
+    --mainColor: #FA9805;
+    --black    : #244361;
+    --white    : #FFF;
+    --dimLight : #f8f8fe;
+    --boxShadow: 0 5px 10px rgba(0, 0, 0, .1);
+}
+
+
+* {
+    margin         : 0;
+    padding        : 0;
+    border         : 0;
+    outline        : none;
+    list-style     : none;
+    user-select    : none;
+    text-decoration: none !important;
+    text-transform : capitalize;
+    box-sizing     : border-box;
+    font-family    : 'Nunito', sans-serif;
+    transition     : all .1s linear;
+}
+
+
+body.userClick{
+
+    --black    : #62affc;
+    --white    : #333;
+    --dimLight : #b9b9b9;
+}
+
+
+
+@import 'mixing';
+
+
+/*
+    100% / 16px = 6.25%
+    6.25% == 1px 
+
+    6.25% * 10 = 62.5% 
+    62.5% == 10px
+*/
+html {
+    font-size         : 62.5%;
+    overflow-x        : hidden;
+    scroll-behavior   : smooth;
+    scroll-padding-top: 6rem;
+
+    &::-webkit-scrollbar {
+        width: 1rem;
+    }
+
+    &::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: var(--mainColor);
+    }
+}
+
+/* 
+Style Scale for all 
+but in responsive - its resizing at 991px
+*/
+section {
+    padding: 2rem 7%;
+}
+
+section:nth-child(even) {
+    background-color: var(--dimLight);
+}
+
+.link-btn {
+    display         : inline-block;
+    padding         : 0.5rem 2.5rem;
+    border-radius   : 5rem;
+    cursor          : pointer;
+    box-shadow      : var(--box-shadow);
+    background-color: var(--mainColor);
+    @include fontStyle(1.8rem, var(--white));
+
+    &:hover {
+        color           : var(--white);
+        background-color: var(--black);
+    }
+}
+
+
+.heading {
+    text-align    : center;
+    padding-bottom: .5rem;
+    @include fontStyle(3rem, var(--black));
+
+    span {
+        color: var(--mainColor);
+    }
+}
+
+@import 'colorSwitcher';
+@import 'header';
+@import 'home';
+@import 'about';
+@import 'prevent';
+@import 'experts';
+@import 'contact';
+@import 'responsiveness';

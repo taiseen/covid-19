@@ -1,0 +1,30 @@
+.contact {
+
+    form {
+        padding      : 1.5rem;
+        border-radius: .5rem;
+        box-shadow   : var(--boxShadow);
+
+        .box,
+        textarea {
+            @include fontStyle(1.8rem, var(--black));
+            background-color: var(--dimLight);
+            text-transform  : none;
+            border-radius   : .5rem;
+            padding         : 1rem;
+            margin          : 0.7rem 0;
+            width           : 100%;
+        }
+
+        textarea {
+            resize: none;
+            height: 15rem;
+        }
+    }
+
+    .map {
+        border-radius: .5rem;
+        width        : 100%;
+        height       : 100%;
+    }
+}

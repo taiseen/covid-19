@@ -1,0 +1,84 @@
+@media (max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+
+    section {
+        padding: 2rem;
+    }
+
+    .home .content {
+        h3 {
+            font-size: 4rem;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+
+    header {
+        .navbar {
+            position     : absolute;
+            top          : 100%;
+            left         : 0;
+            right        : 0;
+            background   : var(--white);
+            border-top   : .1rem solid rgba(0, 0, 0, .1);
+            border-bottom: .1rem solid rgba(0, 0, 0, .1);
+            transition   : .2s linear;
+            clip-path    : polygon(0 0,
+                    100% 0,
+                    100% 0,
+                    0 0);
+            // transform       : scaleY(0);
+            // transform-origin: top right;
+
+
+            &.userClick {
+                // transform: scaleY(1);
+                clip-path: polygon(0 0,
+                        100% 0,
+                        100% 100%,
+                        0 100%);
+            }
+
+            a {
+                display: block;
+                width  : 100%;
+                margin : 1rem;
+            }
+        }
+
+        .fa-times {
+            color    : tomato;
+            transform: rotate(180deg);
+        }
+    }
+
+
+}
+
+@media (max-width: 450px) {
+
+    .colorSwitcher {
+        top: 7rem;
+    }
+
+    .home .content {
+
+        margin-top: -5rem;
+
+        h3 {
+            font-size: 2.5rem;
+        }
+
+        span {
+            font-size: 1.5rem;
+        }
+    }
+
+    .colorSwitcher .switchBtn {
+        left     : -5rem;
+        font-size: 3rem;
+    }
+}
